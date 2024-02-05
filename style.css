@@ -3,30 +3,64 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color: white;
 }
 
 .cabecalho {
-    background-color: yellow;
+
 }
 
 .cabecalhoItens {
     display: flex;
     justify-content: flex-end;
+    padding: 10px;
 }
 
 
 .cabecalhoList {
     display: inline-flex;
     list-style: none;
-    color: black;
+    color: #0000;
     font-size: 20px;
+    font-weight: bold;
+
 }
 
 .cabecalhoList li {
-    padding: 20px;
+    margin-right: 35px;
 }
+
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+.sobre {
+    margin: 150px 150px;
+}
+
+.container-primeiraInfo h1 {
+    font-size: 44px;
+    white-space: pre-line;
+}
+
+.container-primeiraInfo p {
+    margin: 40px 0 40px 0;
+    white-space: pre-line;
+    font-size: 16px;
+}
+
+.container-InfoFoto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-doawload {
+    background-color: #FF6464;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
 }
