@@ -6,21 +6,16 @@ body {
     background-color: white;
 }
 
-.cabecalho {
-
-}
-
 .cabecalhoItens {
     display: flex;
     justify-content: flex-end;
-    padding: 10px;
+    padding: 20px;
 }
 
 
 .cabecalhoList {
     display: inline-flex;
     list-style: none;
-    color: #0000;
     font-size: 20px;
     font-weight: bold;
 
@@ -37,30 +32,69 @@ a {
 }
 
 .sobre {
-    margin: 150px 150px;
+    margin: 150px 150px 50px 150px;
 }
 
 .container-primeiraInfo h1 {
     font-size: 44px;
     white-space: pre-line;
+    color: #21243D;
 }
 
 .container-primeiraInfo p {
     margin: 40px 0 40px 0;
     white-space: pre-line;
     font-size: 16px;
+    color: #21243D;
 }
 
-.container-InfoFoto {
+.container-info {
     display: flex;
     justify-content: space-between;
 }
 
-.button-doawload {
+.button-download {
     background-color: #FF6464;
     color: white;
     cursor: pointer;
     padding: 10px 20px;
     border: none;
     font-size: 16px;
+}
+
+.post {
+    background-color: #EDF7FA;
+    width: 100%;
+    height: 396px;
+}
+
+.container-post {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+.quadrados {
+    display: flex;
+
+}
+
+.quadrado1,
+.quadrado2 {
+    width: 390px;
+    height: 295px;
+    background-color: white;
+    border: none;
+    margin-right: 20px;
+    white-space: pre-line;
+}
+
+.quadrado1 h2,
+.quadrado2 h2 {
+    font-size: 26px;
+}
+
+#RecentPosts {
+    font-size: 22px;
+    padding: 15px 0;
 }
