@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalhoItens">
-            <ul class="cabecalhoList">
+    <header>
+        <nav class="headerItens">
+            <ul class="headerList">
                 <li><a href="#">About Me</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
@@ -20,73 +21,134 @@
     </header>
 
     <main class="container">
-        <section class="sobre">
-            <div class="container-info">
-                <div class="container-primeiraInfo">
-
+        <section class="sobre" id="AboutMe">
+            <div class="container-primeiraInfo">
+                <div class="texto">
                     <h1>Hi, I am John,
                         Creative Technologist</h1>
 
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                         sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
                         consequat sunt nostrud amet.</p>
-
                 </div>
-                <div class="container-primeiraFoto">
-                    <img class="container-primeiraImg" src="./img/Ellipse 1.png" alt="foto de um homem">
-                </div>
+                <img class="container-primeiraImg" src="./img/Ellipse 1.png" alt="imagem de um homem">
             </div>
+            <button class="button-download" id="button-download">Download Resume</button>
 
-            <button class="button-download">Download Resume</button>
         </section>
 
-        <section class="post">
+        <section class="post" id="post">
+
+            <p id="RecentPosts">Recent posts</p>
 
             <div class="container-post">
 
-                <p id="RecentPosts">Recent posts
-                <p>
-
                 <div class="quadrados">
                     <div class="quadrado1">
-                        <h2>Making a design system from
-                            scratch</h2>
-                        <p>12 Feb 2020</p>
-                        <hr>
-                        <p>Design, Pattern</p>
-                        <legend>Amet minim mollit non deserunt ullamco est sit
-                            aliqua dolor do amet sint. Velit officia consequat
-                            duis enim velit mollit. Exercitation veniam
-                            consequat sunt nostrud amet.</legend>
+                        <div class="TextBox">
+                            <h2>Making a design system from
+                                scratch</h2>
+                            <br>
+                            <p>12 Feb 2020 <span class="espacamento">|</span> Design, Pattern</p>
+                            <br>
+                            <legend>Amet minim mollit non deserunt ullamco est sit
+                                aliqua dolor do amet sint. Velit officia consequat
+                                duis enim velit mollit. Exercitation veniam
+                                consequat sunt nostrud amet.</legend>
+                        </div>
                     </div>
 
                     <div class="quadrado2">
-                        <h2>Creating pixel perfect icons in
-                            Figma</h2>
-                        <p>12 Feb 2020</p>
-                        <hr>
-                        <p>Figma, Icon Design</p>
-                        <legend>Amet minim mollit non deserunt ullamco est sit
-                            aliqua dolor do amet sint. Velit officia consequat
-                            duis enim velit mollit. Exercitation veniam
-                            consequat sunt nostrud amet.
-                        </legend>
+                        <div class="TextBox">
+                            <h2>Creating pixel perfect icons in
+                                Figma</h2>
+                            <br>
+                            <p>12 Feb 2020 <span class="espacamento">|</span> Figma, Icon Design</p>
+                            <br>
+                            <legend>Amet minim mollit non deserunt ullamco est sit
+                                aliqua dolor do amet sint. Velit officia consequat
+                                duis enim velit mollit. Exercitation veniam
+                                consequat sunt nostrud amet.
+                            </legend>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </section>
-        <section>
 
 
+        <section class="destaque" id="destaque">
+            <p id="FeaturedWorks">Featured works</p>
+            <div class="work">
+                <img class="workImg" src="./img/Rectangle 30.png" alt="imagem de uma dashboard">
+                <div class="description">
+                    <h2>Designing Dashboards</h2>
+                    <div class="yearText">
+                        <div class="year" id="year">2020</div>
+                        <p>Dashboard</p>
+                    </div>
+                    <legend id="legendWork">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </legend>
+                </div>
+            </div>
+            <hr>
+            <div class="work">
+                <img class="workImg" src="./img/Rectangle 32.png" alt="imagem de uma ilustração">
+                <div class="description">
+                    <h2>Vibrant Portraits of 2020</h2>
+                    <div class="yearText">
+                        <div class="year" id="year">2018</div>
+                        <p>Illustration</p>
+                    </div>
+                    <legend id="legendWork">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </legend>
+                </div>
+            </div>
+            <hr>
+            <div class="work">
+                <img class="workImg" src="./img/Rectangle 34.png" alt="imagem de uma tipografia">
+                <div class="description">
+                    <h2>36 Days of Malayalam type</h2>
+                    <div class="yearText">
+                        <div class="year" id="year">2018</div>
+                        <p>Typography</p>
+                    </div>
+                    <legend id="legendWork">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </legend>
+                </div>
+            </div>
 
-
-            
         </section>
     </main>
 
+    <footer class="rodape" id="footer">
+        <address class="footerAll">
+            <ul class="rodapeUl">
+                <li class="rodapeLi"><a href="https://www.facebook.com/?locale=pt_BR" target="_blank"
+                        rel="external"><img class="siteIcon" src="./img/facebook.png" alt="logo do facebook"></a>
+                </li>
 
-    <footer></footer>
+                <li class="rodapeLi"><a href="https://www.instagram.com" target="_blank" rel="external"><img
+                            class="siteIcon" src="./img/instagram.png" alt="logo do instagram"></a></li>
+
+                <li class="rodapeLi"><a href="https://www.twitter.com" target="_blank" rel="external"><img
+                            class="siteIcon" src="./img/twitter.png" alt="logo do twitter"></a></li>
+
+                <li class="rodapeLi"><a href="https://www.linkedin.com" target="_blank" rel="external"><img
+                            class="siteIcon" src="./img/linkedin.png" alt="logo do linkedin"></a></li>
+            </ul>
+            <small class="rodapeCopyright">
+                Copyright ©2024 All rights reserved
+            </small>
+        </address>
+    </footer>
 
 </body>
 
