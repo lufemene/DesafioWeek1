@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
     <header>
         <nav class="headerItens">
+            <img class="menu" src="./img/hamburger.png" alt="">
             <ul class="headerList">
                 <li><a href="#">About Me</a></li>
                 <li><a href="#">Blog</a></li>
@@ -19,23 +19,34 @@
             </ul>
         </nav>
     </header>
-
     <main>
+
         <section class="sobre" id="AboutMe">
             <div class="container-primeiraInfo">
                 <div class="texto">
                     <h1>Hi, I am John,
                         Creative Technologist</h1>
-
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                         sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
                         consequat sunt nostrud amet.</p>
-
                     <button class="button-download" id="button-download">Download Resume</button>
                 </div>
                 <img class="container-primeiraImg" src="./img/Ellipse 1.png" alt="imagem de um homem">
             </div>
+            <div class="container-primeiraInfoMobile">
+                <div class="textoMobile">
+                    <h1>Hi, I am John, Creative Technologist</h1>
+                    <img class="container-primeiraImg" src="./img/Ellipse 1.png" alt="imagem de um homem">
+                </div>
+                <div class="descMobile">
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                        sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                        consequat sunt nostrud amet.</p>
+                    <button class="button-download" id="button-download">Download Resume</button>
+                </div>
+            </div>
         </section>
+
         <section class="post" id="post">
 
             <div class="container-post">
@@ -61,20 +72,19 @@
                             <h2>Creating pixel perfect icons in
                                 Figma</h2>
                             <br>
-                            <p>12 Feb 2020 <span class="espacamento">|</span> Figma, Icon Design</p>
-                            <br>
-                            <legend>Amet minim mollit non deserunt ullamco est sit
-                                aliqua dolor do amet sint. Velit officia consequat
-                                duis enim velit mollit. Exercitation veniam
-                                consequat sunt nostrud amet.
-                            </legend>
+                                <p>12 Feb 2020 <span class="espacamento">|</span>Figma, Icon Design</p>
+                                <br>
+                                <legend>Amet minim mollit non deserunt ullamco est sit
+                                    aliqua dolor do amet sint. Velit officia consequat
+                                    duis enim velit mollit. Exercitation veniam
+                                    consequat sunt nostrud amet.
+                                </legend>
                         </div>
                     </div>
                 </div>
 
             </div>
         </section>
-
 
         <section class="destaque" id="destaque">
             <div class="container-work">
@@ -144,6 +154,7 @@
                 <li class="rodapeLi"><a href="https://www.linkedin.com" target="_blank" rel="external"><img
                             class="siteIcon" src="./img/linkedin.png" alt="logo do linkedin"></a></li>
             </ul>
+
             <small class="rodapeCopyright">
                 Copyright ©2024 All rights reserved
             </small>

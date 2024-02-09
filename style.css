@@ -2,6 +2,19 @@
     margin: 0;
 }
 
+header {
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    font-family: "Roboto", sans-serif;
+}
+
+footer {
+    font-family: "Roboto", sans-serif;
+    color: #21243D;
+}
+
 body {
     background-color: white;
 }
@@ -18,7 +31,6 @@ body {
     list-style: none;
     font-size: 20px;
     font-weight: bold;
-
 }
 
 .headerList li {
@@ -31,6 +43,9 @@ a {
     color: black;
 }
 
+.menu {
+    display: none;
+}
 
 .sobre {
     display: flex;
@@ -41,7 +56,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .container-primeiraInfo {
@@ -49,6 +64,10 @@ a {
     align-items: center;
     justify-content: space-between;
     width: 80%;
+}
+
+.container-primeiraInfoMobile {
+    display: none;
 }
 
 .container-primeiraInfo h1 {
@@ -70,12 +89,18 @@ a {
     cursor: pointer;
     padding: 10px 20px;
     border: none;
+    border-radius: 2px;
     font-size: 16px;
     width: 180px;
     height: 50px;
     display: inline-flex;
     align-items: center;
     margin-top: 20px;
+}
+
+.button-download:hover {
+    background-color: #21243D;
+    cursor: pointer;
 }
 
 
@@ -115,6 +140,12 @@ a {
     font-size: 18px;
 }
 
+.textMobile {
+    display: none;
+}
+
+
+
 .espacamento {
     margin: 0 20px 0 20px;
 }
@@ -140,10 +171,10 @@ a {
 }
 
 .container-work {
-   display: flex;
-   width: 80%;
-   justify-content: center;
-   flex-direction: column ;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .work {
@@ -202,8 +233,6 @@ a {
     color: #8695A4;
 }
 
-
-
 .rodape {
     display: flex;
     align-items: center;
@@ -252,21 +281,28 @@ hr {
 }
 
 @media screen and (max-width: 1020px) {
-  
+
 
     .headerItens {
-        display: flex;
+        display: block;
         justify-content: flex-end;
-        padding: 20px;
+        padding: 10px;
     }
 
+    .menu {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        flex-direction: end;
+    }
 
     .headerList {
-        display: inline-flex;
+        display: none;
         list-style: none;
         font-size: 20px;
         font-weight: bold;
-
     }
 
     .headerList li {
@@ -279,35 +315,60 @@ hr {
         color: black;
     }
 
+    .container-primeiraImg {
+        width: 243px;
+        height: 243px;
+        justify-content: center;
+        display: flex;
+        margin-top: 20px;
+    }
 
     .sobre {
         display: flex;
         margin: auto;
         width: 388px;
         height: auto;
-        margin: 140px 0 70px 0;
-        flex-direction: column-reverse;
+        margin: 30px 0 70px 0;
         align-items: center;
         justify-content: center;
-
     }
 
     .container-primeiraInfo {
-        display: flex;
-        flex-direction: column-reverse;
+        display: none;
     }
 
-    .container-primeiraInfo h1 {
+    .container-primeiraInfoMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 30px;
+        text-align: center;
+    }
+
+    .container-primeiraInfoMobile h1 {
         font-size: 44px;
-        white-space: pre-line;
         color: #21243D;
     }
 
-    .container-primeiraInfo p {
+    .container-primeiraInfoMobile p {
         margin: 40px 0px;
         white-space: pre-line;
         font-size: 16px;
         color: #21243D;
+    }
+
+    .textoMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .descMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
 
     .button-download {
@@ -328,28 +389,34 @@ hr {
 
     .post {
         background-color: #EDF7FA;
-        height: 396px;
+        height: 800px;
         width: 100%;
     }
 
     .container-post {
+        display: flex;
+        flex-direction: column;
         align-items: center;
         margin: auto;
+        width: 80%;
     }
 
     .quadrados {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        margin: 15px 0;
     }
 
     .quadrado1,
     .quadrado2 {
-        width: 500px;
-        height: 315px;
+        width: 340px;
+        height: 390px;
         background-color: white;
         border: none;
         white-space: pre-line;
-        
+        margin-top: 15px;
+        margin-right: 0px;
     }
 
     .quadrado1 h2,
@@ -363,7 +430,7 @@ hr {
     }
 
     .espacamento {
-        margin: 0 20px 0 20px;
+        margin: 0;
     }
 
     .TextBox {
@@ -372,18 +439,38 @@ hr {
         padding: 20px;
         justify-content: center;
         float: none;
+        white-space: pre-line;
+    }
+
+    .TextBox h2{
+        font-size: 22px;
+    }
+
+    .TextBox p {
+        font-weight: bold;
+        color: black;
     }
 
     #RecentPosts {
         font-size: 22px;
         padding: 15px 0;
+        font-weight: bold;
+        color: #21243D;
     }
 
-    .destaque {
+
+    .destaque,
+    .post {
+        margin: o;
+        padding: 0;
         display: flex;
         flex-direction: column;
-        width: 80%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
     }
+
 
     .work {
         display: inline-flex;
@@ -391,12 +478,31 @@ hr {
         height: auto;
         padding: 14px 0 14px 0;
         justify-content: center;
-
+        flex-direction: column;
+        width: 80%;
     }
+
+    .workImg {
+        width: 100%;
+    }
+
+    .container-work {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-work h2{
+        padding: 10px;
+        text-align: center;
+    }
+
 
     #FeaturedWorks {
         font-size: 22px;
         padding: 14px 0;
+        font-weight: bold;
         color: #21243D;
     }
 
@@ -408,24 +514,28 @@ hr {
         height: 25px;
         border-radius: 16px;
         justify-content: center;
-        align-items: center;
     }
 
     #year {
-        margin-right: 20px;
+        margin-right: 0;
     }
 
     .yearText {
         display: flex;
         align-items: center;
         padding: 20px 0;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
     .description {
         display: inline-flex;
-        padding-left: 30px;
+        padding: 0;
         flex-direction: column;
+    }
 
+    .description h2 {
+        font-size: 24px;
     }
 
     #legendWork {
@@ -441,13 +551,13 @@ hr {
     }
 
 
-
     .rodape {
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0;
         padding: 50px 0 50px 0;
+        background-color: #EDF7FA;
     }
 
     .rodapeUl {
