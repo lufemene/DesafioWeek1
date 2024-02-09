@@ -37,6 +37,11 @@ body {
     margin-right: 35px;
 }
 
+.headerList li:hover {
+    transition: 0.2s;
+    font-size: 22px;
+    cursor: pointer;
+}
 
 a {
     text-decoration: none;
@@ -139,12 +144,6 @@ a {
 .quadrado2 p {
     font-size: 18px;
 }
-
-.textMobile {
-    display: none;
-}
-
-
 
 .espacamento {
     margin: 0 20px 0 20px;
@@ -343,6 +342,7 @@ hr {
         align-items: center;
         margin: 0px 30px;
         text-align: center;
+        justify-content: center;
     }
 
     .container-primeiraInfoMobile h1 {
@@ -569,6 +569,8 @@ hr {
     }
 
     .rodapeCopyright {
+        width: 115px;
+        height: 42px;
         display: flex;
         justify-content: center;
         color: #21243D;
@@ -591,5 +593,12 @@ hr {
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+
+    hr {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+        color: #5a5656;
     }
 }
