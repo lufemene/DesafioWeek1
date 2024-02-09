@@ -64,6 +64,10 @@ a {
 
 }
 
+.container-primeiraImg {
+    margin-bottom: 95px;
+}
+
 .container-primeiraInfo {
     display: flex;
     align-items: center;
@@ -330,6 +334,10 @@ hr {
         margin: 30px 0 70px 0;
         align-items: center;
         justify-content: center;
+    }
+
+    .container-primeiraImg {
+        margin-bottom: 0;
     }
 
     .container-primeiraInfo {
@@ -601,4 +609,5 @@ hr {
         margin: 0;
         color: #5a5656;
     }
+
 }
