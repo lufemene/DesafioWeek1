@@ -31,28 +31,24 @@ a {
     color: black;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0 auto;
-    width: 80%;
-}
 
 .sobre {
     display: flex;
     margin: auto;
     width: 100%;
     height: auto;
-    margin: 140px 0 70px 0;
-    flex-direction: column  ;
+    margin: 120px 0 70px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .container-primeiraInfo {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 80%;
 }
 
 .container-primeiraInfo h1 {
@@ -77,30 +73,26 @@ a {
     font-size: 16px;
     width: 180px;
     height: 50px;
-}
-
-#button-download {
     display: inline-flex;
     align-items: center;
+    margin-top: 20px;
 }
+
 
 .post {
     background-color: #EDF7FA;
     height: 396px;
     width: 100%;
-    
 }
 
 .container-post {
     align-items: center;
     margin: auto;
+    width: 80%;
 }
 
 .quadrados {
     display: flex;
-    /* padding: 0 14px; */
-    /* align-items: center;
-    justify-content: center; */
 }
 
 .quadrado1,
@@ -132,7 +124,7 @@ a {
     flex-direction: column;
     padding: 20px;
     justify-content: center;
-    float:none;
+    float: none;
 }
 
 #RecentPosts {
@@ -143,16 +135,25 @@ a {
 .destaque {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    width: 100%;
+    align-items: center;
+}
+
+.container-work {
+   display: flex;
+   width: 80%;
+   justify-content: center;
+   flex-direction: column ;
 }
 
 .work {
     display: inline-flex;
-    width: auto;
+    width: 80%;
     height: auto;
     padding: 14px 0 14px 0;
-   
+    justify-content: center;
+
+
 }
 
 #FeaturedWorks {
@@ -242,4 +243,243 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+hr {
+    height: 1px;
+    color: #E0E0E0;
+    margin: 15px 0px;
+}
+
+@media screen and (max-width: 1020px) {
+  
+
+    .headerItens {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+    }
+
+
+    .headerList {
+        display: inline-flex;
+        list-style: none;
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    .headerList li {
+        margin-right: 35px;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .sobre {
+        display: flex;
+        margin: auto;
+        width: 388px;
+        height: auto;
+        margin: 140px 0 70px 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .container-primeiraInfo {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container-primeiraInfo h1 {
+        font-size: 44px;
+        white-space: pre-line;
+        color: #21243D;
+    }
+
+    .container-primeiraInfo p {
+        margin: 40px 0px;
+        white-space: pre-line;
+        font-size: 16px;
+        color: #21243D;
+    }
+
+    .button-download {
+        background-color: #FF6464;
+        color: white;
+        cursor: pointer;
+        padding: 10px 20px;
+        border: none;
+        font-size: 16px;
+        width: 180px;
+        height: 50px;
+    }
+
+    #button-download {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .post {
+        background-color: #EDF7FA;
+        height: 396px;
+        width: 100%;
+    }
+
+    .container-post {
+        align-items: center;
+        margin: auto;
+    }
+
+    .quadrados {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quadrado1,
+    .quadrado2 {
+        width: 500px;
+        height: 315px;
+        background-color: white;
+        border: none;
+        white-space: pre-line;
+        
+    }
+
+    .quadrado1 h2,
+    .quadrado2 h2 {
+        font-size: 26px;
+    }
+
+    .quadrado1 p,
+    .quadrado2 p {
+        font-size: 18px;
+    }
+
+    .espacamento {
+        margin: 0 20px 0 20px;
+    }
+
+    .TextBox {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        float: none;
+    }
+
+    #RecentPosts {
+        font-size: 22px;
+        padding: 15px 0;
+    }
+
+    .destaque {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .work {
+        display: inline-flex;
+        width: auto;
+        height: auto;
+        padding: 14px 0 14px 0;
+        justify-content: center;
+
+    }
+
+    #FeaturedWorks {
+        font-size: 22px;
+        padding: 14px 0;
+        color: #21243D;
+    }
+
+    .year {
+        background-color: #142850;
+        color: white;
+        display: flex;
+        width: 60px;
+        height: 25px;
+        border-radius: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #year {
+        margin-right: 20px;
+    }
+
+    .yearText {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .description {
+        display: inline-flex;
+        padding-left: 30px;
+        flex-direction: column;
+
+    }
+
+    #legendWork {
+        display: flex;
+    }
+
+    .description h2 {
+        position: relative;
+    }
+
+    .description p {
+        color: #8695A4;
+    }
+
+
+
+    .rodape {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 50px 0 50px 0;
+    }
+
+    .rodapeUl {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+
+    }
+
+    .rodapeCopyright {
+        display: flex;
+        justify-content: center;
+        color: #21243D;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .siteIcon {
+        height: 30px;
+        width: 30px;
+    }
+
+    .rodapeLi {
+        display: flex;
+        /* padding-left: 10px; */
+        margin-right: 30px;
+    }
+
+    .footerAll {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
